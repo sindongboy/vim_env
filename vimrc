@@ -2,6 +2,8 @@
 source ${HOME}/.vim/plug-config/plug.vim
 source ${HOME}/.vim/plug-config/settings.vim
 " source ${HOME}/nvim/general/functions.vim
+source ${HOME}/.vim/plug-config/coc/coc.vim
+source ${HOME}/.vim/plug-config/coc/coc-extension.vim
 source ${HOME}/.vim/plug-config/mappings.vim
 source ${HOME}/.vim/plug-config/which-key.vim
 

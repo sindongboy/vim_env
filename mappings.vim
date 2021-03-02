@@ -45,9 +45,13 @@ else
   xnoremap J :move '>+1<CR>gv-gv
 
   " fzf preview
+  " MRU
   nnoremap <silent> <F1> :History<CR>
+  " Project Files
   nnoremap <silent> <F2> :FZF<CR>
+  " Current Buffers
   nnoremap <silent> <F3> :Buffers<CR>
+  " All Command
   nnoremap <silent> <F4> :Commands<CR>
   " Alternate way to save
   nnoremap <silent> <C-s> :w<CR>
