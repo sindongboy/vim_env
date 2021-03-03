@@ -2,13 +2,13 @@
 source ${HOME}/.vim/plug-config/plug.vim
 source ${HOME}/.vim/plug-config/settings.vim
 " source ${HOME}/nvim/general/functions.vim
-source ${HOME}/.vim/plug-config/coc/coc.vim
-source ${HOME}/.vim/plug-config/coc/coc-extension.vim
 source ${HOME}/.vim/plug-config/mappings.vim
 source ${HOME}/.vim/plug-config/which-key.vim
+source ${HOME}/.vim/plug-config/coc/coc.vim
+source ${HOME}/.vim/plug-config/coc/coc-extension.vim
+source ${HOME}/.vim/plug-config/fzf.vim
 
 source ${HOME}/.vim/plug-config/theme.vim
-source ${HOME}/.vim/plug-config/fzf.vim
 source ${HOME}/.vim/plug-config/indent-guide.vim
 source ${HOME}/.vim/plug-config/repl.vim
 source ${HOME}/.vim/plug-config/minimap.vim

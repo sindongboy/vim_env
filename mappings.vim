@@ -46,13 +46,13 @@ else
 
   " fzf preview
   " MRU
-  nnoremap <silent> <F1> :History<CR>
+  " nnoremap <silent> <F1> :History<CR>
   " Project Files
-  nnoremap <silent> <F2> :FZF<CR>
+  " nnoremap <silent> <F2> :FZF<CR>
   " Current Buffers
-  nnoremap <silent> <F3> :Buffers<CR>
+  " nnoremap <silent> <F3> :Buffers<CR>
   " All Command
-  nnoremap <silent> <F4> :Commands<CR>
+  " nnoremap <silent> <F4> :Commands<CR>
   " Alternate way to save
   nnoremap <silent> <C-s> :w<CR>
   " Alternate way to quit

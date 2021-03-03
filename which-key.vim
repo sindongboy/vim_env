@@ -1,15 +1,10 @@
-" Leader Key Maps
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
 
-let @s = 'veS"'
+call which_key#register('<Space>', "g:which_key_map")
 
-" Timeout
-let g:which_key_timeout = 100
-
-let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
-
-" Map leader to which_key
-nnoremap <silent> <leader> :silent <c-u> :silent WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
+nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
 
 " Create map to add keys to
 let g:which_key_map =  {}
@@ -17,25 +12,31 @@ let g:which_key_map =  {}
 let g:which_key_sep = '→'
 " set timeoutlen=100
 
-" Coc Search & refactor
-nnoremap <leader>? CocSearch <C-R>=expand("<cword>")<CR><CR>
-let g:which_key_map['?'] = 'search word'
-
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
-let g:which_key_max_size = 0
-
-" let g:which_key_position = 'botright'
-" let g:which_key_position = 'topleft'
-" let g:which_key_vertical = 1
 
 " Change the colors if you want
+highlight default link WhichKey          Operator
+highlight default link WhichKeySeperator DiffAdded
+highlight default link WhichKeyGroup     Identifier
+highlight default link WhichKeyDesc      Function
+
 
 " Hide status line
 autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
+
+" Timeout
+let g:which_key_timeout = 100
+
+" Not a fan of floating windows for this
+let g:which_key_max_size = 0
+
+" let g:which_key_position = 'botright'
+" let g:which_key_position = 'topleft'
+" let g:which_key_vertical = 1
 
 " Single mappings
 let g:which_key_map['0'] = [ ':Startify'                                 , 'Start Page' ]
@@ -48,7 +49,8 @@ let g:which_key_map['e'] = [ ':NERDTreeToggle'   , 'explorer' ]
 let g:which_key_map['E'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
 let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
-let g:which_key_map['o'] = [ ':TagbarToggle'                                   , 'tagbar' ]
+let g:which_key_map['O'] = [ ':Vista coc'                                   , 'vista' ]
+let g:which_key_map['o'] = [ ':Vista finder coc'                                   , 'vista' ]
 let g:which_key_map['p'] = [ ':FZF'                                          , 'search files' ]
 let g:which_key_map['q'] = [ ':q'                         , 'quit' ]
 let g:which_key_map['r'] = [ ':REPLToggle'                         , '[REPL] start' ]
@@ -344,5 +346,6 @@ let g:which_key_map.t = {
       \ }
 
 
-" Register which key map
-call which_key#register('<Space>', "g:which_key_map")
+
+
+
