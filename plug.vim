@@ -23,6 +23,10 @@ call plug#begin('~/.vim/autoload/plugged')
     " Plug 'suy/vim-context-commentstring'
     " highlight all matches under cursor
     " Plug 'RRethy/vim-illuminate'
+    " Flake8
+    Plug 'nvie/vim-flake8'
+    "vim clock
+    Plug 'enricobacis/vim-airline-clock'
     "vim bookmark
     Plug 'MattesGroeger/vim-bookmarks'
     " vim REPL
@@ -68,7 +72,7 @@ call plug#begin('~/.vim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     Plug 'rhysd/git-messenger.vim'
     " Terminal
-    " Plug 'voldikss/vim-floaterm'
+    Plug 'voldikss/vim-floaterm'
     " Start Screen
     Plug 'mhinz/vim-startify'
     " Vista
@@ -141,6 +145,7 @@ call plug#begin('~/.vim/autoload/plugged')
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'ryanoasis/vim-devicons'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     " jsx syntax support
     " Typescript syntax
     " Plug 'HerringtonDarkholme/yats.vim'

@@ -53,3 +53,7 @@ let g:vista#renderer#icons = {
 " let g:vista_close_on_jump = 1
 
 let g:vista_blink = [3, 200]
+
+
+" let g:vista_default_executive = 'coc'
+let g:vista_echo_cursor_strategy = 'floating_win'

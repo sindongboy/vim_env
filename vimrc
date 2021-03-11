@@ -9,7 +9,7 @@ source ${HOME}/.vim/plug-config/coc/coc-extension.vim
 source ${HOME}/.vim/plug-config/fzf.vim
 
 source ${HOME}/.vim/plug-config/theme.vim
-source ${HOME}/.vim/plug-config/indent-guide.vim
+" source ${HOME}/.vim/plug-config/indent-guide.vim
 source ${HOME}/.vim/plug-config/repl.vim
 source ${HOME}/.vim/plug-config/minimap.vim
 source ${HOME}/.vim/plug-config/commentary.vim
@@ -19,6 +19,8 @@ source ${HOME}/.vim/plug-config/vista.vim
 source ${HOME}/.vim/plug-config/tagbar.vim
 source ${HOME}/.vim/plug-config/startify.vim
 source ${HOME}/.vim/plug-config/rainbow.vim
+source ${HOME}/.vim/plug-config/flake8.vim
+source ${HOME}/.vim/plug-config/floaterm.vim
 
 highlight ColorColumn guibg=purple
 

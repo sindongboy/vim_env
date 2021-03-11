@@ -49,8 +49,8 @@ let g:which_key_map['e'] = [ ':NERDTreeToggle'   , 'explorer' ]
 let g:which_key_map['E'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split below']
 let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
-let g:which_key_map['O'] = [ ':Vista coc'                                   , 'vista' ]
-let g:which_key_map['o'] = [ ':Vista finder coc'                                   , 'vista' ]
+let g:which_key_map['O'] = [ ':Vista coc'                                   , 'symbol sidebar' ]
+let g:which_key_map['o'] = [ ':Vista finder coc'                                   , 'symbol search' ]
 let g:which_key_map['p'] = [ ':FZF'                                          , 'search files' ]
 let g:which_key_map['q'] = [ ':q'                         , 'quit' ]
 let g:which_key_map['r'] = [ ':REPLToggle'                         , '[REPL] start' ]
@@ -124,10 +124,9 @@ let g:which_key_map.d = {
 
 " f is for find and replace
 let g:which_key_map.f = {
-      \ 'name' : '+find & replace' ,
-      \ 'f' : [':Farr --source=vimgrep'    , 'file'],
+      \ 'name' : '+File' ,
+      \ 'f' : [':FZF'    , 'file'],
       \ 'r' : [':History'    , 'MRU'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
       \ }
 
 " k is for task
