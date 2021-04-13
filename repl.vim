@@ -19,7 +19,7 @@ nnoremap <F12> :REPLToggle<Cr>
 "autocmd Filetype python nnoremap <F11> <Esc>:REPLPDBS<Cr>
 
 let g:repl_position = 3
-"let g:repl_position = 0
+" let g:repl_position = 1
 "0 represents bottom
 "1 represents top
 "2 represents left
